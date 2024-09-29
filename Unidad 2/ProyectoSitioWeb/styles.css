@@ -1,0 +1,491 @@
+body{
+    background: #0d192b;
+}
+
+body{
+    font-size: 1em;
+}
+h1 {
+    font-size: 2.8rem;
+}
+
+h4 {
+    font-size: 1.8rem;
+}
+
+h6 {
+    font-size: 1.2rem;
+}
+
+p {
+    font-size: 1rem;
+}
+
+/*pantallas medianas entre 768px y 1024px */
+@media (max-width: 1024px) {
+    body{
+        font-size: 0.9em;
+    }
+    h1 {
+        font-size: 2.5rem;
+    }
+    
+    h4 {
+        font-size: 1.6rem;
+    }
+    
+    h6 {
+        font-size: 1rem;
+    }
+    
+    p {
+        font-size: 0.9rem;
+    }
+}
+
+/*pantallas pequeñas hasta 768px */
+@media (max-width: 768px) {
+    body{
+        font-size: 0.8em;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+    
+    h4 {
+        font-size: 1.4rem;
+    }
+    
+    h6 {
+        font-size: 0.9rem;
+    }
+    
+    p {
+        font-size: 0.8rem;
+    }
+}
+
+
+/* Fuente */
+.roboto-mono{
+    font-family: "Roboto Mono", monospace;
+    color: #09c184;
+    text-align: center;
+    justify-content: center;
+}
+
+/* Estilos barra navegacion header */
+.navbar-expand-lg .navbar-collapse{
+    justify-content: space-between;
+}
+
+.dropdown-item:hover{
+    background-color: #b7b7b7;
+}
+
+.bg-body-tertiary-fondo{
+    background-color:#0d192b;
+}
+
+.navbar-brand{
+    width: 8em;
+}
+
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show{
+    color:#b7b7b7
+}
+
+.nav-link{
+    color:#b7b7b7
+}    
+
+.nav-link.active:hover{
+    color:gray
+}    
+
+.nav-link:focus, .nav-link:hover {
+    color: gray;
+}    
+
+.icon-container {
+    display: flex;
+    align-items: flex-end;
+}
+
+.icon-container i {
+    font-size: 2.2em; 
+    color: #b7b7b7; 
+}
+
+.icon-container a {
+    text-align: center;
+    font-size: 1em;
+    text-decoration: none;
+    color: #b7b7b7; 
+    margin: 0.5em;
+}
+
+
+.icon-container span {
+    display: block; 
+    margin-top: 0.3em;
+    font-size: 1em; 
+    text-decoration: none;
+    color: #b7b7b7;
+}
+
+
+/* Boton menu de pantallas pequeñas */
+.bi-list{
+    color: #b7b7b7;
+}
+
+#toggler-button{
+    border-color: #b7b7b7;
+}
+
+
+/* Texto principal */
+.fondo-principal{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}    
+
+.div-tutulo{
+    display: grid;
+    text-align: center;
+    width: 75%;
+    padding: 1em;
+}    
+
+.form-control{
+    width: 60%;
+    background-color: #0d192b;
+    border-radius: 1em;
+    border-color: #09c184;
+    color: #b7b7b7;
+    
+}    
+
+.form-control:focus{
+    border-color: #09c184;
+    box-shadow: 0 0 0 .25rem rgba(6, 249, 160, 0.35);
+    background-color: #0d192b;
+    color: #b7b7b7;
+}
+
+.me-2::placeholder{
+    color: #b7b7b7;
+}    
+
+.me-2:focus{
+    background-color: #0d192b;
+    color: #b7b7b7;
+}    
+
+.d-flex{
+    justify-content: center;
+}    
+.btn-outline-success{
+    border-color: #09c184;
+    color: #b7b7b7;
+}    
+
+.btn-outline-success:hover{
+    background-color: #09c184;
+    border-color: #0d192b;
+    color: #0d192b;
+}    
+
+.bi-box-arrow-in-right{
+    color: #b7b7b7;
+}    
+
+
+/* Estilos carrusel */
+.carousel-container{
+    margin: 1em;
+}
+
+.carousel{
+    display: flex;
+    padding-top: 5em !important;
+    padding-left: 10% !important;
+    padding-right: 10% !important;
+}
+.carousel-control-next, .carousel-control-prev{
+    margin-top: 20%;
+    border-color: #09c184;
+    height: 8%;
+    width: 5%;
+    top: unset;
+    bottom: unset;
+    border-style: solid;
+    border-width: 0.2em;
+    border-radius: 100%;
+}
+
+.carousel-inner{
+    border: 0.3em solid #09c184;
+}
+
+/* Estilos tarjetas */
+.courses{
+    margin-top: 2em;
+    margin-bottom: 2em;
+    margin-left: 5em;
+    margin-right: 5em;
+    display: grid;
+}
+
+.card{
+    margin-top: 1em;
+    border-style: solid;
+    border-width: 0.3em;
+    border-color: #09c184;
+    background: #0d192b;
+}
+
+.card-body{
+    background-color: #0d192b;
+}
+
+
+.card-title{
+    font-family: "Roboto Mono", monospace;
+    color: #09c184;
+    font-size: x-large;
+}
+
+.card-text{
+    font-family: "Roboto Mono", monospace;
+    color: #09c184;
+    font-size: small;
+}
+
+#course-info{
+    font-family: "Roboto Mono", monospace;
+    color: #09c184;
+    font-size: medium;
+}
+
+.card-img, .card-img-top {
+    padding: 0.3em;
+    background: #0d192b;
+}
+
+.btn-primary{
+    font-family: "Roboto Mono", monospace;
+    color: black;
+    background-color: #09c184;
+    border-color: #09c184;
+    width: 100%;
+    --bs-btn-active-bg: #0d192b;
+    --bs-btn-active-border-color: #09c184;
+}
+
+.btn-primary:hover{
+    font-family: "Roboto Mono", monospace;
+    color: #09c184;
+    background-color: #0d192b;
+    border-color: #09c184;
+}
+
+/* Estilos acordion */
+.accordion{
+    background-color: #0d192b;
+}
+.accordion-item{
+    background-color: #0d192b;
+    border-color:#09c184;
+    font-family: "Roboto Mono", monospace;
+}
+
+.accordion-button:focus{
+    box-shadow: none;
+}
+
+.accordion-button{
+    background-color: #0d192b;
+    color: #09c184;
+}
+.accordion-button:not(.collapsed){
+    background: #09c184;
+    color: #0d192b;
+}
+
+.accordion-body{
+    color: #09c184;
+    font-family: "Roboto Mono", monospace;
+}
+
+
+/* Estilos footer */
+.footer{
+    display: flex;
+    align-items: center;
+    margin-top: 1.5em;
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+}
+
+.link-footer{
+    color: #b7b7b7;
+    text-decoration: none;
+    padding-right: 1em;
+}
+
+
+/* ----------------Inicio de sesion---------------- */
+
+/* Formulario inicio de sesion */
+h4{
+    font-family: "Roboto Mono", monospace;
+    color: #09c184;
+}
+.form{
+    display: grid;
+    padding-left: 30%;
+}
+
+.form-floating{
+    background-color: #0d192b;
+    border-radius: 1em;
+    border-color: #09c184;
+}
+
+input + label{
+    color: #b7b7b7;
+}
+
+input:focus + label {
+    color: #b7b7b7;
+}
+/* cambia los colores del label despues de la animacion */
+.form-floating>.form-control-plaintext~label::after, .form-floating>.form-control:focus~label::after, .form-floating>.form-control:not(:placeholder-shown)~label::after, .form-floating>.form-select~label::after{
+    background-color: #0d192b;
+}
+.form-floating>.form-control-plaintext~label, .form-floating>.form-control:focus~label, .form-floating>.form-control:not(:placeholder-shown)~label, .form-floating>.form-select~label{
+    color: #09c184;
+}
+
+.from-iniciarSesion{
+    width: 57%;
+    display: flex;
+    justify-content: center;
+}
+
+#iniciar-sesion{
+    width:auto;
+    margin-top: 5%;
+    margin-left: 0;
+}
+
+/* Separador */
+
+.div-separador {
+    margin-top: 5%;
+    text-align: center;
+  }
+  
+  .div-separador hr.separador {
+    border-top: 1px solid #09c184; 
+    margin: 0;
+    position: relative;
+  }
+  
+  .div-separador h6 {
+    font-family: "Roboto Mono", monospace;
+    color: rgb(9, 193, 132, 0.6);
+    display: inline-block;
+    position: relative;
+    background: #0d192b; 
+    padding: 0 10px;  /* Espacio alrededor del texto */
+    top: -0.8em;      /* Ajusta la posición para que quede centrado sobre la línea */
+  }
+  
+  .link-separador{
+    font-family: "Roboto Mono", monospace;
+    color: #09c184;
+    opacity: 0.6;
+}
+
+
+/* Pagina cursos */
+
+
+/* Imagen, informacion y compra */
+#curso{
+    padding: 0;
+    border: 0.3em solid #09c184;
+}
+
+.información-curso{
+    display: flex;
+    justify-content: center;
+}
+
+@media (min-width: 1200px) {
+    #columna-descripcion {
+        flex: 0 0 auto;
+        width: 49.33333333%;
+    }
+} 
+
+.compra{
+    display: flex;
+    justify-content: center;
+    margin: 2%;;
+}
+
+.compra p{
+    padding: 0.5em;
+    margin-top: 1em;
+}
+
+#adcarrito{
+    background-color: #0d192b;
+    color: #09c184;
+}
+
+/* Objetivos */
+.contenedor-objetivos {
+    padding: 3%;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+  
+.objetivos-cuadro ul {
+    display: grid;
+    gap: 1.5em;
+    color:#09c184;
+    padding-right: 5%;
+    padding-top: 1em;
+}
+  
+
+@media (min-width: 1024px) {
+    .objetivos-cuadro ul {
+      grid-template-columns: repeat(3, 1fr);  /* pantallas grandes (3 columnas) */
+    }
+}
+  
+@media (max-width: 1023px) {
+    .objetivos-cuadro ul {
+      grid-template-columns: 1fr; /*pantallas pequeñas (1 columna) */
+    }
+}  
+
+
+/* Descripcion del curso */
+.roboto-mono-cursos{
+    text-align: start; 
+    margin-left: 4%;
+    margin-top: 2em;
+    color: #09c184;
+}
+#descipcion-detallada-curso{
+    margin-left: 3%;;
+    color: #09c184;
+}

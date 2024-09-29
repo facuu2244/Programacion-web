@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="recursos\Iconos y logos\dev-academy.png" type="image/x-icon">
+        <title>Programacion Web</title>
+
+        <!-- Boostrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <!-- Iconos Boostrap -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <!-- Estilos locales -->
+        <link rel="stylesheet" href="styles.css">
+        <!-- fuentes -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-lg bg-body-tertiary-fondo">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="index.html"><img src="recursos\Iconos y logos\dev-academy.png" alt="Logo" width="100%" height="100%"></a>
+                    <button id="toggler-button" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span><i class="bi bi-list"></i></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                            <li>
+                                <form class="d-flex" role="search">
+                                    <input class="form-control me-2" type="search" placeholder="Buscar cursos" aria-label="Search">
+                                    <button class="btn btn-outline-success" type="submit">Buscar</button>
+                                </form>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Explorar
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="catalogo-cursos.html">Todos los cursos</a></li>
+                                    <li><a class="dropdown-item" href="#">Mis favoritos</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item"></li>
+                                <a class="nav-link active" aria-current="page" href="index.html#accordionExample">Preguntas frecuentes</a>
+                            </li>
+                        </ul>
+                        <div class="icon-container">
+                            <a href="#">
+                                <i class="bi bi-cart3"></i>
+                                <span>Carrito</span>
+                            </a>
+                            <a href="iniciar-sesion.html">
+                                <i class="bi bi-box-arrow-in-right"></i>
+                                <span>Ingresar</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+    
+        <div class="container">
+            <div class="row">
+
+                <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4">
+                    <img src="recursos\cursos\html-css.jpg" class="card-img-top" id="curso" alt="Curso python">
+                </div>
+
+                <div id="columna-descripcion" class="col-sm-6 col-md-6 col-lg-4 col-xl-4" style="margin: auto;">
+                        <h1 class="roboto-mono">Programación Web</h1>
+                        <p class="roboto-mono">Aprenderás a construir sitios web dinámicos y responsivos desde cero. Descubre los fundamentos de HTML, CSS y JavaScript, y avanza hasta dominar tecnologías avanzadas como React, Node.js, y bases de datos. Este curso está diseñado tanto para principiantes como para aquellos que buscan perfeccionar sus habilidades y crear aplicaciones web completas y funcionales. ¡Empieza hoy y conviértete en un desarrollador web profesional!</p>
+                        <div class="compra">
+                            <a href="#" class="btn btn-primary" id="comprar-curso">Comprar<br>$99.999</a>
+                            <p class="roboto-mono"><strong>O</strong></p>
+                            <a href="" btn class="btn btn-primary" id="adcarrito">Añadir al <br>carrito</a>
+                        </div>
+                </div>
+            </div>
+        </div>
+
+
+        <h1 class="roboto-mono-cursos">Objetivos</h1>
+        <div class="contenedor-objetivos">
+            <div class="objetivos-cuadro" style="border: #09c184 0.3em solid;">
+                <ul>
+                    <li>Aprenderás los <strong>fundamentos de HTML</strong> para estructurar el contenido de páginas web.</li>
+                    <li>Dominarás el uso de <strong>CSS</strong> para dar estilo y crear diseños atractivos y responsivos.</li>
+                    <li>Serás capaz de <strong>escribir scripts en JavaScript</strong> para agregar interactividad a tus páginas web.</li>
+                    <li>Conocerás cómo usar <strong>Flexbox y CSS Grid</strong> para crear layouts modernos y adaptables a diferentes dispositivos.</li>
+                    <li>Entenderás el funcionamiento del <strong>DOM</strong> y cómo manipularlo con JavaScript para crear experiencias dinámicas.</li>
+                    <li>Te familiarizarás con el desarrollo de aplicaciones usando <strong>React</strong> para construir interfaces de usuario reutilizables.</li>
+                    <li>Aprenderás a <strong>gestionar servidores y bases de datos</strong> utilizando tecnologías como **Node.js** y **MongoDB**.</li>
+                    <li>Comprenderás los principios de <strong>desarrollo full-stack</strong>, integrando frontend y backend en una aplicación completa.</li>
+                    <li>Serás capaz de <strong>optimizar tus sitios web</strong> para mejorar su rendimiento y accesibilidad.</li>
+                    <li>Aplicarás todo lo aprendido en un <strong>proyecto final</strong>, donde desarrollarás una aplicación web completa y funcional.</li>
+                </ul>                                
+            </div>
+        </div>
+
+        <h1 class="roboto-mono-cursos">Descripcion del curso</h1>
+        <div id="descipcion-detallada-curso">
+            <p>Este curso de <strong>Programación Web</strong> está diseñado para llevarte desde los conceptos más básicos hasta convertirte en un experto en desarrollo de aplicaciones web completas. Comenzarás aprendiendo los <strong>fundamentos de HTML</strong>, el lenguaje principal para estructurar el contenido de cualquier página web. A medida que avances, dominarás <strong>CSS</strong>, lo que te permitirá dar estilo y diseño a tus páginas, haciendo que sean visualmente atractivas y completamente responsivas en dispositivos móviles.<br><br>
+
+            Una vez que tengas una base sólida, te sumergirás en el mundo de <strong>JavaScript</strong>, el lenguaje que otorga interactividad a los sitios web. Aprenderás a manipular el <strong>DOM</strong>, crear eventos dinámicos y construir componentes reutilizables. Además, explorarás técnicas avanzadas de diseño con <strong>CSS Grid y Flexbox</strong> para crear interfaces modernas y flexibles.<br><br>
+                
+            Este curso también te introducirá a <strong>React</strong>, uno de los frameworks más populares para el desarrollo de aplicaciones web. Con React, serás capaz de construir interfaces de usuario de manera eficiente y escalable. Además, aprenderás sobre el desarrollo del lado del servidor usando <strong>Node.js</strong> y cómo manejar bases de datos con <strong>MongoDB</strong> para almacenar y gestionar datos de manera efectiva.<br><br>
+                
+            A lo largo del curso, integrarás todos estos conocimientos en el desarrollo de un proyecto final, donde construirás una <strong>aplicación web completa</strong>, desde la estructura hasta el backend. No importa si eres un principiante o si ya tienes conocimientos previos, este curso te brindará las herramientas y técnicas necesarias para convertirte en un desarrollador web profesional y estar listo para afrontar proyectos reales en la industria.</p>
+        </div>
+
+        <h1 class="roboto-mono-cursos">Contenido del curso</h1>
+        <h4 style="margin-left: 4%;">302 clases; 43hs 14min</h4>
+
+        <div class="container">
+            <div class="accordion" id="accordionExample">
+                
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Parte 1: Introducción a la programación web
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <ul>
+                                <li>¿Qué es la programación web?</li>
+                                <li>Estructura básica de una página web</li>
+                                <li>Configuración del entorno de desarrollo</li>
+                                <li>Introducción a los lenguajes frontend y backend</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Parte 2: HTML - Estructura de sitios web
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <ul>
+                                <li>Etiquetas básicas de HTML</li>
+                                <li>Enlaces, imágenes y multimedia</li>
+                                <li>Formularios y validación de datos</li>
+                                <li>Estructuración semántica con HTML5</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Parte 3: CSS - Estilos y diseño de páginas web
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <ul>
+                                <li>Fundamentos de CSS</li>
+                                <li>Colores, fuentes y cajas</li>
+                                <li>Diseño responsivo con media queries</li>
+                                <li>Flexbox y CSS Grid</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            Parte 4: Introducción a JavaScript
+                        </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <ul>
+                                <li>Variables, tipos de datos y operadores</li>
+                                <li>Estructuras de control y funciones</li>
+                                <li>Manipulación del DOM</li>
+                                <li>Eventos y manejo de formularios</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                            Parte 5: JavaScript Avanzado
+                        </button>
+                    </h2>
+                    <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <ul>
+                                <li>Funciones asíncronas y promesas</li>
+                                <li>Fetch API y manejo de JSON</li>
+                                <li>Modularización y buenas prácticas</li>
+                                <li>ES6 y más allá</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                            Parte 6: React - Framework para aplicaciones frontend
+                        </button>
+                    </h2>
+                    <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <ul>
+                                <li>Introducción a React y sus conceptos clave</li>
+                                <li>Componentes y el ciclo de vida</li>
+                                <li>Estados y props</li>
+                                <li>Rutas y navegación</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                            Parte 7: Backend con Node.js
+                        </button>
+                    </h2>
+                    <div id="collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <ul>
+                                <li>Configuración de un servidor con Express</li>
+                                <li>Rutas y controladores en Node.js</li>
+                                <li>Manejo de datos con JSON</li>
+                                <li>Autenticación y seguridad básica</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                            Parte 8: Bases de datos con MongoDB
+                        </button>
+                    </h2>
+                    <div id="collapseEight" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <ul>
+                                <li>Fundamentos de bases de datos NoSQL</li>
+                                <li>CRUD en MongoDB</li>
+                                <li>Integración de MongoDB con Node.js</li>
+                                <li>Consultas avanzadas y agregación</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                            Parte 9: Seguridad en aplicaciones web
+                        </button>
+                    </h2>
+                    <div id="collapseNine" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <ul>
+                                <li>Autenticación y autorización de usuarios</li>
+                                <li>Protección contra ataques CSRF y XSS</li>
+                                <li>Encriptación de datos sensibles</li>
+                                <li>Buenas prácticas de seguridad web</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+                            Parte 10: Herramientas de desarrollo y despliegue
+                        </button>
+                    </h2>
+                    <div id="collapseTen" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <ul>
+                                <li>Git y control de versiones</li>
+                                <li>Despliegue de aplicaciones web en plataformas como Heroku</li>
+                                <li>Automatización con herramientas como Webpack</li>
+                                <li>Pruebas y debugging</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven">
+                            Parte 11: Proyecto final
+                        </button>
+                    </h2>
+                    <div id="collapseEleven" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <ul>
+                                <li>Planificación y diseño del proyecto</li>
+                                <li>Desarrollo frontend y backend</li>
+                                <li>Integración de base de datos</li>
+                                <li>Despliegue de la aplicación web</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>                
+
+            </div>
+        </div>
+
+        <footer>
+            <div class="footer">
+              <a class="navbar-brand" href="index.html"><img src="recursos\Iconos y logos\dev-academy.png" alt="Logo" width="100%" height="100%"></a>
+              <div class="container">
+                <div class="row">
+        
+                  <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                    <p style="padding-top: 1.8em; color: #b7b7b7;">&copy; Copyright DevAcademy 2024.</p>
+                  </div>
+        
+                  <div style="padding-top: 1.8em; width: 36%;" class="col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                      <a class="link-footer" href="politicas-privacidad.html">Politicas de privacidad</a>
+                      <a class="link-footer" href="#" style="cursor: default;">Contacto: devacademy@gmail.com</a>
+                  </div>
+        
+                </div>
+              </div>
+            </div>
+        </footer>
+
+          
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    </body>
+</html>

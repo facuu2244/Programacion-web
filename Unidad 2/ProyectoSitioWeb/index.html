@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="icon" href="recursos\Iconos y logos\dev-academy.png" type="image/x-icon">
+    <title>DevAcademy</title>
+    
+    <!-- Boostrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Iconos Boostrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Estilos locales -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary-fondo">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html"><img src="recursos\Iconos y logos\dev-academy.png" alt="Logo" width="100%" height="100%"></a>
+          <button id="toggler-button" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span><i class="bi bi-list"></i></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Explorar
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="catalogo-cursos.html">Todos los cursos</a></li>
+                  <li><a class="dropdown-item" href="#">Mis favoritos</a></li>
+                </ul>
+              </li>
+              <li class="nav-item"></li>
+                <a class="nav-link active" aria-current="page" href="#accordionExample">Preguntas frecuentes</a>
+              </li>
+            </ul>
+            <div class="icon-container">
+              <a href="#">
+                <i class="bi bi-cart3"></i>
+                <span>Carrito</span>
+              </a>
+              <a href="iniciar-sesion.html">
+                <i class="bi bi-box-arrow-in-right"></i>
+                <span>Ingresar</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div class="fondo-principal">
+      <div class="div-tutulo">
+        <h1 class="roboto-mono">¡Comienza el camino del desarrollo del software!</h1>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Buscar cursos" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Buscar</button>
+        </form>
+      </div>
+    </div>
+    
+    <div class="carousel-container">
+      <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel" style="padding: 5em;">
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="recursos\slider\desarrollo-personal2.jpg" width="100%" class="d-block w-100">
+          </div>
+          <div class="carousel-item">
+            <img src="recursos\slider\inteligencia-artificial.jpg" width="100%" class="d-block w-100">
+          </div>
+          <div class="carousel-item">
+            <img src="recursos\slider\programacion-futuro.jpg" width="100%" class="d-block w-100">
+          </div>
+        </div>
+
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+
+    <h1 class="roboto-mono">Cursos destacados</h1>
+    <div class="container">
+      <div class="row">
+
+        <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4">
+          <div class="card shadow">
+            <img src="recursos\cursos\python2.jpeg" class="card-img-top" alt="Curso python">
+            <div class="card-body">
+              <h5 class="card-title">Python desde 0 a experto</h5>
+              <p class="card-text">Aprende Python 3 desde cero hasta experto en Data Analysis. <br><br></p>
+              <p id="course-info">
+                Duracion: 34h 55min <br>
+                Precio:$59.999</p>
+              <a href="Curso-basico-python.html" class="btn btn-primary">Más información</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4">
+          <div class="card shadow">
+            <img src="recursos\cursos\java2.jpg" class="card-img-top" alt="Curso java">
+            <div class="card-body">
+              <h5 class="card-title">Máster en java</h5>
+              <p class="card-text">El curso más detallado y mejor explicado de Java para aprender a dominar las bases de Java y convertirte en un experto.</p>
+              <p id="course-info">
+                Duracion: 30hs 35min <br>
+                Precio:$69.999</p>
+              <a href="master-java.html" class="btn btn-primary">Más información</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4">
+          <div class="card shadow">
+            <img src="recursos\cursos\html-css2.jpg" class="card-img-top" alt="Curso html-css">
+            <div class="card-body">
+              <h5 class="card-title">Programacion web</h5>
+              <p class="card-text">Aprende Desarrollo Web con este curso 100% práctico, paso a paso y sin conocimientos previo</p>
+              <p id="course-info">
+                Duracion: 43hs 14min <br>
+                Precio:$99.999</p>
+              <a href="programacion-web.html" class="btn btn-primary">Más información</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <a href="catalogo-cursos.html" class="btn btn-primary" style="margin-top: 3%;margin-left: 15%; width: 70%;">Ver todos los cursos</a>
+    </div>
+
+
+    <h1 class="roboto-mono" style="padding-top: 2.5em;">Preguntas frecuentes</h1>
+
+    <div class="container">
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              ¿Qué es DevAcademy?
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <p>
+                <strong>DevAcademy</strong> es una plataforma de formación en línea especializada en ofrecer cursos de programación en diversas áreas de desarrollo de software. Con un enfoque práctico y accesible, DevAcademy ofrece una variedad de rutas de aprendizaje diseñadas para todos los niveles:
+                <ul>
+                  <li>Desarrollo Web</li>
+                  <li>Ciencia de Datos</li>
+                  <li>Seguridad informatica</li>
+                </ul>
+                Cada curso está organizado en módulos progresivos que te permitirán avanzar paso a paso, reforzando tus habilidades mediante proyectos prácticos. A medida que completas los cursos, puedes obtener certificaciones, participar en retos y colaborar en una comunidad de desarrolladores para compartir conocimientos y resolver dudas.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              ¿Cuáles son los métodos de pago disponibles?
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              Podés abonar el importe de cualquier curso a través de tarjeta de crédito o débito, las tarjetas aceptadas son Visa y Mastercard. O tambien por medio de billeteras virtuales como MercadoPago o PayPal. <br><br>
+
+              Para realizar una compra debés dirigirte a la página del curso que te interesa y acceder a la pasarela de pagos desde el botón ¡Comprar!
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              ¿Cada cuanto tiempo se publica nuevo contenido?
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              Cada mes, se publicarán entre uno y tres cursos nuevos (en la medida de lo posible).
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+    <footer>
+      <div class="footer">
+        <a class="navbar-brand" href="index.html"><img src="recursos\Iconos y logos\dev-academy.png" alt="Logo" width="100%" height="100%"></a>
+        <div class="container">
+          <div class="row">
+  
+            <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4">
+              <p style="padding-top: 1.8em; color: #b7b7b7;">&copy; Copyright DevAcademy 2024.</p>
+            </div>
+  
+            <div style="padding-top: 1.8em; width: 36%;" class="col-sm-12 col-md-6 col-lg-4 col-xl-4">
+              <a class="link-footer" href="politicas-privacidad.html">Politicas de privacidad</a>
+              <a class="link-footer" href="#" style="cursor: default;">Contacto: devacademy@gmail.com</a>
+            </div>
+  
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  
+  </body>
+</html>

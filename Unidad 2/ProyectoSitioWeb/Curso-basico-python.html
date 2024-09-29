@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="recursos\Iconos y logos\dev-academy.png" type="image/x-icon">
+        <title>Iniciar Sesión</title>
+
+        <!-- Boostrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <!-- Iconos Boostrap -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <!-- Estilos locales -->
+        <link rel="stylesheet" href="styles.css">
+        <!-- fuentes -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-lg bg-body-tertiary-fondo">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="index.html"><img src="recursos\Iconos y logos\dev-academy.png" alt="Logo" width="100%" height="100%"></a>
+                    <button id="toggler-button" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span><i class="bi bi-list"></i></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                            <li>
+                                <form class="d-flex" role="search">
+                                    <input class="form-control me-2" type="search" placeholder="Buscar cursos" aria-label="Search">
+                                    <button class="btn btn-outline-success" type="submit">Buscar</button>
+                                </form>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Explorar
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="catalogo-cursos.html">Todos los cursos</a></li>
+                                    <li><a class="dropdown-item" href="#">Mis favoritos</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item"></li>
+                                <a class="nav-link active" aria-current="page" href="index.html#accordionExample">Preguntas frecuentes</a>
+                            </li>
+                        </ul>
+                        <div class="icon-container">
+                            <a href="#">
+                                <i class="bi bi-cart3"></i>
+                                <span>Carrito</span>
+                            </a>
+                            <a href="iniciar-sesion.html">
+                                <i class="bi bi-box-arrow-in-right"></i>
+                                <span>Ingresar</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+    
+        <div class="container">
+            <div class="row">
+
+                <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4">
+                    <img src="recursos\cursos\python.jpeg" class="card-img-top" id="curso" alt="Curso python">
+                </div>
+
+                <div id="columna-descripcion" class="col-sm-6 col-md-6 col-lg-4 col-xl-4" style="margin: auto;">
+                        <h1 class="roboto-mono">Python desde 0 a experto</h1>
+                        <p class="roboto-mono">¿No sabes programar? Mejor, porque en este curso vamos a empezar desde cero.Te llevará de principiante a experto, explorando desde los conceptos básicos hasta las técnicas avanzadas. Con una metodología práctica y orientada a proyectos, aprenderás a dominar Python y a resolver problemas reales de programación.</p>
+                      </p>
+                        <div class="compra">
+                            <a href="#" class="btn btn-primary" id="comprar-curso">Comprar<br>$59.999</a>
+                            <p class="roboto-mono"><strong>O</strong></p>
+                            <a href="" btn class="btn btn-primary" id="adcarrito">Añadir al <br>carrito</a>
+                        </div>
+                </div>
+            </div>
+        </div>
+
+
+        <h1 class="roboto-mono-cursos">Objetivos</h1>
+        <div class="contenedor-objetivos">
+            <div class="objetivos-cuadro" style="border: #09c184 0.3em solid;">
+              <ul>
+                <li>Aprenderás a <strong>instalar Python y configurar VSCode</strong>, preparándote para desarrollar programas desde cero.</li>
+                <li><strong>Dominarás la sintaxis básica de Python</strong>, incluyendo variables, operadores, condicionales, y bucles para resolver problemas lógicos.</li>
+                <li>Serás capaz de <strong>trabajar con estructuras de datos</strong> como listas, diccionarios, conjuntos y tuplas, manipulando información de forma eficiente.</li>
+                <li>Podrás <strong>definir y aplicar funciones</strong> en tus proyectos, mejorando la organización y modularidad del código.</li>
+                <li>Comprenderás y pondrás en práctica los <strong>principios de la programación orientada a objetos (POO)</strong>, como clases, objetos, herencia y polimorfismo.</li>
+                <li>Aprenderás a <strong>gestionar errores y excepciones</strong> en tus programas, aumentando la robustez y fiabilidad del código.</li>
+                <li>Serás capaz de <strong>utilizar bibliotecas estándar de Python</strong> para manipulación de archivos, manejo de fechas, y otras tareas comunes en el desarrollo.</li>
+                <li><strong>Implementarás algoritmos de búsqueda y ordenación</strong> como búsqueda binaria, quicksort, mergesort, mejorando el rendimiento de tus programas.</li>
+                <li>Dominarás el uso de <strong>expresiones regulares</strong> para la búsqueda y manipulación avanzada de textos.</li>
+                <li>Podrás <strong>trabajar con archivos JSON, CSV, y XML</strong> para manejar y procesar grandes volúmenes de datos.</li>
+                <li>Serás capaz de <strong>automatizar tareas repetitivas</strong> utilizando scripts en Python, desde la administración de archivos hasta el web scraping.</li>
+                <li>Aprenderás a <strong>crear e interactuar con bases de datos SQLite y MySQL</strong>, realizando consultas SQL desde Python.</li>
+                <li>Comprenderás cómo <strong>realizar pruebas unitarias (unit testing)</strong> para garantizar la calidad y funcionalidad de tu código.</li>
+                <li>Serás capaz de <strong>trabajar con APIs REST</strong> y consumir servicios web desde tus programas en Python.</li>
+                <li>Desarrollarás proyectos prácticos, como un <strong>web scraper, una API REST, o una aplicación de línea de comandos</strong>.</li>
+            </ul>            
+            </div>
+        </div>
+
+        <h1 class="roboto-mono-cursos">Descripcion del curso</h1>
+        <div id="descipcion-detallada-curso">
+          <p>¿Listo para dar el salto y convertirte en un experto en <strong>Python</strong>? Nuestro curso está diseñado para llevarte desde los <strong>fundamentos de la programación</strong> hasta un nivel avanzado, dominando uno de los lenguajes más versátiles y demandados en el mundo de la tecnología.<br><br>
+
+          Comenzarás aprendiendo a <strong>instalar Python</strong> y a configurar <strong>VSCode</strong>, tu entorno de desarrollo. Desde allí, te guiaremos a través de los <strong>conceptos esenciales de Python</strong>, incluyendo tipos de datos, operadores y estructuras de control como bucles y condicionales. Pero eso es solo el principio. A medida que avances, profundizarás en <strong>estructuras de datos</strong> como listas, diccionarios, tuplas y conjuntos, y te convertirás en un maestro de la <strong>programación orientada a objetos (POO)</strong>, comprendiendo conceptos clave como clases, objetos, herencia y polimorfismo.<br><br>
+            
+          Además, aprenderás a aplicar <strong>algoritmos de búsqueda y ordenación</strong> para optimizar tus programas, y serás capaz de gestionar archivos de manera eficiente con Python. También nos adentraremos en el manejo de <strong>excepciones y pruebas unitarias</strong> para asegurar la calidad y robustez de tu código, dándote las habilidades necesarias para crear programas fiables.<br><br>
+            
+          En la parte avanzada del curso, explorarás cómo <strong>interactuar con bases de datos</strong> como SQLite y MySQL, así como el <strong>consumo de APIs REST</strong> para desarrollar aplicaciones modernas que interactúan con servicios web. No solo aprenderás teoría, sino que desarrollarás proyectos prácticos, como un <strong>web scraper</strong>, una <strong>API REST</strong>, y la <strong>automatización de tareas</strong>, que te permitirán poner en práctica todo lo aprendido.<br><br>
+            
+          Este curso no es solo una introducción a Python; es un recorrido completo desde cero hasta un nivel avanzado que te proporcionará las herramientas y el conocimiento necesarios para afrontar desafíos del mundo real. Tanto si eres principiante como si ya tienes conocimientos previos, este curso te ayudará a <strong>desarrollar las habilidades necesarias</strong> para destacar en el mundo de la programación.</p>
+        </div>
+
+        <h1 class="roboto-mono-cursos">Contenido del curso</h1>
+        <h4 style="margin-left: 4%;">301 clases; 34h 55min Duracion total</h4>
+
+        <div class="container">
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Parte 1: Fundamentos de Python e instalación
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <ul>
+                            <li>¿Qué es Python?</li>
+                            <li>Instalación de Python y VSCode</li>
+                            <li>Configuración del entorno de desarrollo</li>
+                            <li>Primera ejecución de un script</li>
+                            <li>Sintaxis básica: indentación, comentarios y buenas prácticas</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Parte 2: Fundamentos de Python
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <ul>
+                            <li>Tipos de datos: enteros, flotantes, booleanos, cadenas</li>
+                            <li>Operadores aritméticos, lógicos y relacionales</li>
+                            <li>Condicionales: if, else, elif</li>
+                            <li>Match y Case</li>
+                            <li>Manejo de cadenas: concatenación, slicing, métodos comunes</li>
+                            <li>Estructuras de datos: listas, tuplas, conjuntos y diccionarios</li>
+                            <li>Búcles: for y while</li>
+                            <li>Funciones: definición, parámetros, valores de retorno</li>
+                            <li>Variables locales y globales</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Parte 3: Programación orientada a objetos (POO)
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <ul>
+                            <li>Clases y objetos: definición y creación</li>
+                            <li>Atributos y métodos</li>
+                            <li>Constructores y destructores</li>
+                            <li>Herencia y sobreescritura de métodos</li>
+                            <li>Polimorfismo</li>
+                            <li>Encapsulamiento y métodos privados</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        Parte 4: Estructuras de datos avanzadas y algoritmos
+                    </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <ul>
+                            <li>Manejo de archivos: lectura y escritura</li>
+                            <li>Listas, diccionarios y conjuntos avanzados</li>
+                            <li>Comprehensions: listas, diccionarios y conjuntos</li>
+                            <li>Algoritmos de búsqueda: lineal y binaria</li>
+                            <li>Algoritmos de ordenación: burbuja, selección, quicksort</li>
+                            <li>Recursividad y optimización</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                        Parte 5: Manejo de excepciones y pruebas
+                    </button>
+                </h2>
+                <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <ul>
+                            <li>Manejo de errores y excepciones</li>
+                            <li>Try, except, finally</li>
+                            <li>Creación de excepciones personalizadas</li>
+                            <li>Pruebas unitarias (unit testing)</li>
+                            <li>Automatización de pruebas</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                        Parte 6: Bases de datos y APIs
+                    </button>
+                </h2>
+                <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <ul>
+                            <li>Conexión con bases de datos SQLite</li>
+                            <li>Consultas básicas con SQL</li>
+                            <li>Manejo de MySQL desde Python</li>
+                            <li>APIs REST: conceptos y consumo desde Python</li>
+                            <li>Envió y manejo de datos JSON</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                        Parte 7: Proyectos y automatización
+                    </button>
+                </h2>
+                <div id="collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <ul>
+                            <li>Proyecto 1: Web Scraper con BeautifulSoup</li>
+                            <li>Proyecto 2: API REST con Flask</li>
+                            <li>Proyecto 3: Automatización de tareas con Python</li>
+                            <li>Proyecto 4: Gestión de bases de datos con Python y MySQL</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+
+            </div>
+        </div>
+
+        <footer>
+            <div class="footer">
+              <a class="navbar-brand" href="index.html"><img src="recursos\Iconos y logos\dev-academy.png" alt="Logo" width="100%" height="100%"></a>
+              <div class="container">
+                <div class="row">
+        
+                  <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                    <p style="padding-top: 1.8em; color: #b7b7b7;">&copy; Copyright DevAcademy 2024.</p>
+                  </div>
+        
+                  <div style="padding-top: 1.8em; width: 36%;" class="col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                      <a class="link-footer" href="politicas-privacidad.html">Politicas de privacidad</a>
+                      <a class="link-footer" href="#" style="cursor: default;">Contacto: devacademy@gmail.com</a>
+                  </div>
+        
+                </div>
+              </div>
+            </div>
+        </footer>
+
+          
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    </body>
+</html>
